@@ -1,0 +1,217 @@
+html {
+  height: 100%;
+  margin:0px;
+}
+body {
+  font: 13px/1 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  /*pointer-events: none;*/
+  height: 100%;
+  margin:0px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.mainview {
+  position: relative;
+  left: 0;
+  /*transition: left .2s;*/
+
+
+  height: 100%;
+  margin:0px;
+}
+
+/*height只能设置为具体值才能正常显示，还有其他办法没？*/
+.msg-container-body {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+  overflow-y: scroll; 
+}
+/*.controls {
+  display: none;
+}*/
+
+
+.controlsBottom  {
+  z-index: 600;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #f8f8f8;
+  text-align: center;
+  align-items: center;
+}
+.controlsBottomBtn {
+  position: relative;
+  margin: 0 10%;
+  padding-top: 37px;
+  min-width: 34px;
+  text-align: center;
+  align-items: center;
+  bottom: -29px;
+}
+.BtnRecoveryPng {
+  
+}
+.controlsBottomBtnRecovery {
+  background: url("../images/recovery.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 15px 15px;
+}
+.BtnPurgePng {
+  
+}
+.controlsBottomBtnPurge {
+  background: url("../images/purge.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 15px 15px;
+}
+
+.msg-item {
+  padding: 13px;
+  border-bottom: 1px solid #cdd2d5;
+}
+.msg-recipients {
+  font-weight: 700;
+  height: 18px;
+  line-height: 16px;
+}
+.msg-snippet {
+  color: #666;
+  height: 18px;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  pointer-events: none;
+}
+.msg-time {
+  color: #b8b7bd;
+}
+.msg-dialog {
+  max-width: 100%;
+  padding: 14px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.msg-dialog-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  max-width: 60%;
+  min-width: 50px;
+  padding: 8px;
+
+  /*word-break: break-all;*/
+  word-wrap: break-word;
+
+  /*margin: 6px;*/
+  line-height: 20px;
+  clear: both;
+}
+
+.msg-dialog-corner{  
+        content: "";  
+        width: 0;  
+        height: 0;  
+        border: 15px solid red;  
+        border-color: red transparent transparent transparent;  
+        position:absolute;  
+        bottom: -30px;  
+        left: 40px;  
+    }  
+
+
+.msg-dialog-item-content {
+  pointer-events: none;
+}
+.msg-pannel {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+.msg-pannel-body {
+  overflow:auto;
+  top: 65px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  /*bottom: 60px;*/
+}
+.msg-pannel-body-Infinite {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  height: auto !important;
+}
+.msg-pannel-top {
+  height: 50px;
+  padding: 5px 0px 5px 5px;
+  border-bottom: 1px solid #cdd2d5;
+}
+.msg-pannel-controlTop {
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  line-height: 1.5;
+  background: #efeff0;
+}
+
+
+.msg-pannel-connect {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0px 10px 5px
+}
+.msg-pannel-recipients {
+  color: #666;
+  margin: 0px 0px 5px 5px;
+}
+
+.controlsTop {
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  background: #efeff0;
+}
+.controlsTopBanner {
+  padding: 0 15px;
+}
+.controlsTopTool {
+  padding: 0 15px;
+  width: 100%;
+}
+.controlsTopBtn {
+  width: 60px;
+  height: 30px;
+  line-height: 2.5;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+}
+
+.msg-container{
+  width: 100%;
+  overflow: auto;
+  top: 50px;
+  /*display: flex;*/
+  z-index: 10;
+  position: absolute;
+}
